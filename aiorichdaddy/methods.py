@@ -88,7 +88,6 @@ class RichDaddyMethods:
                 } 
             })
 
-
         else:
             return await self.client.request("transfers/create/", {
                 'accessToken': self.client.accessToken(),
