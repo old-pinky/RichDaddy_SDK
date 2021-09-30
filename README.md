@@ -1,5 +1,5 @@
 # RichDaddy_SDK для Python 3.7+
-**RichDaddy_SDK для Python3.7 +** простая реализация методов API RichDaddy
+**RichDaddy_SDK для Python3.7+** простая реализация методов API RichDaddy
 
 [Документация RichDaddy API](https://vk.com/@richda-bogatyi-papa-api)
 
@@ -30,7 +30,7 @@ async def main():
 
     pay = await ardApi.transfersCreate(id='6105969c6f40ac82f08ef4a1', dialog=True, title='Hello!', label='My name is Vladimir Putin', amount=1000)
     print(pay)
-    
+
     trans_get = await ardApi.transfersGet()
     print(trans_get)
 
