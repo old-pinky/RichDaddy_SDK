@@ -4,7 +4,7 @@ import typing
 from loguru import logger
 
 
-class RichDaddyMethods:
+class ARichDaddyMethods:
 
     def __init__(self, client: AsyncRichDaddyClient):
         """
@@ -87,6 +87,7 @@ class RichDaddyMethods:
                     'label': label
                 } 
             })
+
 
         else:
             return await self.client.request("transfers/create/", {

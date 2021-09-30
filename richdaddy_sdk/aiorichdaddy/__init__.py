@@ -15,7 +15,7 @@ class AsyncRichDaddy:
         self.access_token = access_token
 
         self.client = client.AsyncRichDaddyClient(access_token)
-        self.api = methods.RichDaddyMethods(self.client)
+        self.api = methods.ARichDaddyMethods(self.client)
 
     def getApi(self):
         return self.api

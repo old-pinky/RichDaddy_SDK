@@ -19,11 +19,9 @@ class AsyncRichDaddyClient:
         if not access_token: 
             logger.error('Access token is not specifed!')
 
-
-
         self.access_token = access_token
 
-        self.api_url = 'https://richdatest.dooal.ru/richda/api/{}'
+        self.api_url = 'https://richda.dooal.ru/richda/api/{}'
 
     def accessToken(self,):
         return self.access_token
@@ -33,8 +31,8 @@ class AsyncRichDaddyClient:
         self, 
         method: typing.Optional[str] = None,
         params: typing.Optional[dict] = None,
-        **kwargs: typing.Any
-    ) -> dict:
+        **kwargs: typing.Any) -> dict:
+        
         async with aiohttp.ClientSession() as session, session.request('POST',
             url=self.api_url.format(method),json=params) as response:
             
